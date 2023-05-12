@@ -8,7 +8,23 @@ import {
   Checkbox,
 } from "@chakra-ui/react";
 
+import { useState } from "react";
+
 const Filtros = () => {
+  const [comida, setComida] = useState([
+    { nombre: "Hamburguesa", acepta: false },
+    { nombre: "Completos", acepta: false },
+    { nombre: "Sushi", acepta: false },
+    { nombre: "Italian food", acpeta: false },
+  ]);
+
+  const [pago, setPago] = useState([
+    { tipo: "Efectivo", acepta: false },
+    { tipo: "Débito", acepta: false },
+    { tipo: "Crédito", acepta: false },
+    { tipo: "Sodexo", acepta: false },
+  ]);
+
   return (
     <div>
       <Accordion allowToggle>
@@ -28,7 +44,9 @@ const Filtros = () => {
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4}>"Aqui van los tipos de comida"</AccordionPanel>
+          {comida.map((item) => (
+            <AccordionPanel pb={4}>{item.nombre}</AccordionPanel>
+          ))}
         </AccordionItem>
 
         <AccordionItem
@@ -43,16 +61,18 @@ const Filtros = () => {
           <h2>
             <AccordionButton>
               <Box as="span" textAlign="left">
-                Sodexo
+                Tipo de pago
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4}>
-            <Checkbox defaultChecked iconColor="rgb(0,255,0)">
-              Acepta
-            </Checkbox>
-          </AccordionPanel>
+          {pago.map((item) => (
+            <AccordionPanel pb={4}>
+              <Checkbox defaultChecked iconColor="rgb(0,255,0)">
+                {item.tipo}
+              </Checkbox>
+            </AccordionPanel>
+          ))}
         </AccordionItem>
 
         <AccordionItem
