@@ -4,96 +4,60 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Box,
   Checkbox,
+  CheckboxGroup,
+  VStack,
+  HStack,
 } from "@chakra-ui/react";
 
 import { useState } from "react";
 
 const Filtros = () => {
-  const [comida, setComida] = useState([
-    { nombre: "Hamburguesa", acepta: false },
-    { nombre: "Completos", acepta: false },
-    { nombre: "Sushi", acepta: false },
-    { nombre: "Italian food", acpeta: false },
-  ]);
-
-  const [pago, setPago] = useState([
-    { tipo: "Efectivo", acepta: false },
-    { tipo: "Débito", acepta: false },
-    { tipo: "Crédito", acepta: false },
-    { tipo: "Sodexo", acepta: false },
-  ]);
+  const categorias = [
+    {
+      nombre: "Tipos de comida",
+      productos: [
+        { nombre: "Hamburguesa", value: false, id: 1 },
+        { nombre: "Completos", value: false, id: 2 },
+        { nombre: "Sushi", value: false, id: 3 },
+        { nombre: "Italian food", value: false, id: 4 },
+      ],
+    },
+    {
+      nombre: "Tipos de Pago",
+      productos: [
+        { nombre: "Efectivo", value: false, id: 5 },
+        { nombre: "Débito", value: false, id: 6 },
+        { nombre: "Crédito", value: false, id: 7 },
+        { nombre: "Sodexo", value: false, id: 8 },
+      ],
+    },
+  ];
 
   return (
     <div>
-      <Accordion allowToggle>
-        <AccordionItem
-          style={{
-            position: "absolute",
-            height: "50px",
-            width: "100px",
-            top: "50px",
-          }}
-        >
-          <h2>
-            <AccordionButton>
-              <Box as="span" textAlign="left">
-                Tipos de comida
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          {comida.map((item) => (
-            <AccordionPanel pb={4}>{item.nombre}</AccordionPanel>
+      <Accordion allowMultiple >
+        <HStack spacing={"100px"}>
+          {categorias.map((categoria) => (
+            <AccordionItem key={categoria.nombre}>
+              <AccordionButton _expanded={true}>
+                {categoria.nombre}
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel>
+                <CheckboxGroup>
+                  <VStack align="start">
+                    {categoria.productos.map((producto) => (
+                      <Checkbox key={producto.id} value={producto.value}>
+                        {producto.nombre}
+                      </Checkbox>
+                    ))}
+                  </VStack>
+                </CheckboxGroup>
+              </AccordionPanel>
+            </AccordionItem>
           ))}
-        </AccordionItem>
-
-        <AccordionItem
-          style={{
-            position: "absolute",
-            height: "50px",
-            width: "100px",
-            left: "200px",
-            top: "50px",
-          }}
-        >
-          <h2>
-            <AccordionButton>
-              <Box as="span" textAlign="left">
-                Tipo de pago
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          {pago.map((item) => (
-            <AccordionPanel pb={4}>
-              <Checkbox defaultChecked iconColor="rgb(0,255,0)">
-                {item.tipo}
-              </Checkbox>
-            </AccordionPanel>
-          ))}
-        </AccordionItem>
-
-        <AccordionItem
-          style={{
-            position: "absolute",
-            height: "50px",
-            width: "100px",
-            left: "400px",
-            top: "50px",
-          }}
-        >
-          <h2>
-            <AccordionButton>
-              <Box textAlign="left">Clasificacion</Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel>
-            "Aqui va las clasificaciones para filtrar"
-          </AccordionPanel>
-        </AccordionItem>
+        </HStack>
       </Accordion>
       <h2
         style={{
