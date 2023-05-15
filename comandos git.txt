@@ -1,0 +1,41 @@
+git init inicia para que git tome como ubicacion y comienza a versionar 
+	--bare repositorio remoto
+git status muestra los estados dentro de la carpeta
+git add trakea el archivo . para tomar todos los archivos
+git commit -m " "
+git log una identificacion unica del git
+git config --global user.name o user.email
+	   --local para identificarte en los commit
+git config user.name ver el nogigmbre del usuario
+
+git log  --oneline
+git log 
+https://devhints.io/git-log
+.gitignore archivo configuracion con los nombres a ignorar 
+	carpeta/
+	a.config
+git clone 
+git pull actuliza repositorio con los datos del remoto
+git branch area de trabajo
+git checkout
+git merge permite unir las brash
+git rebase permite unir todos los commit
+git stash permite guardar un trabajo sin terminar 
+-----------------------------
+descargar desde el repositorio remoto
+git fetch 
+git pull
+-----------------------------
+para agregar un archivo
+git add
+git commit -m ""
+git push
+--------------------------
+para unir 2 branch
+git fetch asegurar tener todas las actualizacion
+git checkout estar en la rama main
+git merge master unir la rama main con master
+git push para enviar la actualizacion
+--------------------------------------------------
+para borrar un branch
+git push <remote> --delete master <remote> nombre del repositorio remoto, master nombre del branch a eliminar
