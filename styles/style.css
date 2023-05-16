@@ -2,6 +2,11 @@ header {
   background-color: #BBBBBB;
   padding: 20px 0;
 }
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
 body {
   margin: 0;
 
@@ -13,4 +18,14 @@ body {
   height: 50px;
   width: 100px;
   background-color: aqua;
+}
+footer {
+  background: url(/imagenes/bg.jpg);
+  text-align: center;
+  padding: 40px;
+}
+.copyright {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px;
 }
