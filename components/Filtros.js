@@ -6,9 +6,6 @@ import {
   AccordionPanel,
   AccordionIcon,
   Checkbox,
-  CheckboxGroup,
-  VStack,
-  HStack,
 } from "@chakra-ui/react";
 
 import { useState } from "react";
