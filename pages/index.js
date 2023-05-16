@@ -1,14 +1,25 @@
-import Filtros from "../components/Filtros";
+// Next.js
+import Head from "next/head";
+
+// Components
+import Header from "../components/Header.js";
+import Filtros from "../components/Filtros.js";
+import Mapa from "../components/Mapa.js";
+import Footer from "../components/Footer.js";
 
 const Index = () => {
   return (
-    <div className="container" id="principal">
-      <title>LaPicada</title>
-
-      <h1>LaPicada</h1>
-
-      <Filtros></Filtros>
-    </div>
+    <>
+      <Head>
+        <title>LaPicada</title>
+      </Head>
+      <div className="container" id="principal">
+        <Header />
+        <Filtros />
+        <Mapa />
+        <Footer />
+      </div>
+    </>
   );
 };
 
