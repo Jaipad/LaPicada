@@ -6,28 +6,9 @@ import {
   AccordionPanel,
   AccordionIcon,
   Checkbox,
-  CheckboxGroup,
-  VStack,
-  HStack,
 } from "@chakra-ui/react";
 
-import { useState } from "react";
-
-const Filtros = () => {
-  const [comidas, setComidas] = useState([
-    { id: 1, nombre: "Hamburguesa", checked: false },
-    { id: 2, nombre: "Completos", checked: false },
-    { id: 3, nombre: "Sushi", checked: false },
-    { id: 4, nombre: "Italian Food", checked: false },
-  ]);
-
-  const [pagos, setPagos] = useState([
-    { id: 5, nombre: "Efectivo", checked: false },
-    { id: 6, nombre: "Débito", checked: false },
-    { id: 7, nombre: "Crédito", checked: false },
-    { id: 8, nombre: "Sodexo", checked: false },
-  ]);
-
+const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
   const seleccionDeComidas = (event, item) => {
     const { checked } = event.target;
     setComidas((prevItems) =>
@@ -47,8 +28,8 @@ const Filtros = () => {
   };
 
   return (
-    <div>
-      <Accordion allowToggle style={{ position: "relative", width: "120px" }}>
+    <div style={{ display: "flex" }}>
+      <Accordion allowToggle>
         <AccordionItem>
           <h2>
             <AccordionButton>
@@ -74,7 +55,7 @@ const Filtros = () => {
         </AccordionItem>
       </Accordion>
 
-      <Accordion allowToggle style={{ position: "absolute", width: "120px", left: "200px", top: "70px" }}>
+      <Accordion allowToggle>
         <AccordionItem>
           <h2>
             <AccordionButton>

@@ -1,6 +1,8 @@
 // Next.js
 import Head from "next/head";
 
+import { useState } from "react";
+
 // Components
 import Header from "../components/Header.js";
 import Filtros from "../components/Filtros.js";
@@ -8,6 +10,20 @@ import Mapa from "../components/Mapa.js";
 import Footer from "../components/Footer.js";
 
 const Index = () => {
+  const [comidas, setComidas] = useState([
+    { id: 1, nombre: "Hamburguesa", checked: false },
+    { id: 2, nombre: "Completos", checked: false },
+    { id: 3, nombre: "Sushi", checked: false },
+    { id: 4, nombre: "Italian Food", checked: false },
+  ]);
+
+  const [pagos, setPagos] = useState([
+    { id: 5, nombre: "Efectivo", checked: false },
+    { id: 6, nombre: "Débito", checked: false },
+    { id: 7, nombre: "Crédito", checked: false },
+    { id: 8, nombre: "Sodexo", checked: false },
+  ]);
+
   return (
     <>
       <Head>
@@ -27,8 +43,18 @@ const Index = () => {
       </Head>
       <div className="container" id="principal">
         <Header />
+<<<<<<< HEAD
         <Filtros />
         <Mapa/>
+=======
+        <Filtros
+          comidas={comidas}
+          setComidas={setComidas}
+          pagos={pagos}
+          setPagos={setPagos}
+        />
+        <Mapa />
+>>>>>>> 23827a153c1032166d9b177adac42cbf706398bc
         <Footer />
       </div>
     </>
