@@ -1,31 +1,55 @@
 header {
-  background-color: #BBBBBB;
-  padding: 20px 0;
+  background-color: #575757;
+  padding: 40px 0;
 }
+
+.logo {
+  width: 20%;
+  margin: auto;
+}
+
 .caja {
   width: 940px;
   position: relative;
   margin: 0 auto;
 }
+
 body {
   margin: 0;
-
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
 .botonSlider {
   position: relative;
   height: 50px;
-  width: 100px;
+  width: auto;
   background-color: aqua;
 }
+
 footer {
   background: url(/imagenes/bg.jpg);
   text-align: center;
   padding: 40px;
+
 }
+
 .copyright {
   color: #FFFFFF;
   font-size: 13px;
-  margin: 20px;
+  margin: auto;
+}
+
+.logoB {
+  width: 10%;
+  margin: auto;
+  padding: 15px 0;
+}
+
+#map {
+  height: 700px;
+  width: 90%;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
 }

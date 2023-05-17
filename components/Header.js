@@ -3,7 +3,7 @@ const Header = () => {
     <header>
       <div class="caja">
         <h1>
-          <img src="/imagenes/logo.png" alt="The Locales Squad" />
+          <img class="logo"src="/imagenes/logoBlanco.png" alt="The Locales Squad" />
         </h1>
       </div>
     </header>
