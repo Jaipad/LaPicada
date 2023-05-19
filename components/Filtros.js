@@ -6,6 +6,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Checkbox,
+  Input,
 } from "@chakra-ui/react";
 
 const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
@@ -81,7 +82,10 @@ const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
         </AccordionItem>
       </Accordion>
 
-      <h2>Horario:</h2>
+      <div style={{ display: "flex", gap: "10px" }}>
+        <label>Horario:</label>
+        <Input type="time" />
+      </div>
     </div>
   );
 };
