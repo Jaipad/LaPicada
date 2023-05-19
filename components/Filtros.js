@@ -29,7 +29,7 @@ const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
   };
 
   return (
-    <div style={{ display: "flex" }}>
+    <div className="filtros">
       <Accordion allowToggle>
         <AccordionItem>
           <h2>
@@ -82,7 +82,7 @@ const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
         </AccordionItem>
       </Accordion>
 
-      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+      <div className="filtroHorario">
         <label>Horario:</label>
         <Input type="time" />
       </div>

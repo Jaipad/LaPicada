@@ -20,6 +20,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.filtros {
+  display: flex;
+}
+
+.filtroHorario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 #map {
   height: 700px;
   width: 90%;
