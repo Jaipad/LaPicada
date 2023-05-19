@@ -3,15 +3,15 @@ header {
   padding: 40px 0;
 }
 
-.logo {
-  width: 20%;
-  margin: auto;
-}
-
-.caja {
+.divLogo {
   width: 940px;
   position: relative;
   margin: 0 auto;
+}
+
+.logo {
+  width: 20%;
+  margin: auto;
 }
 
 body {
@@ -20,24 +20,18 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.botonSlider {
-  position: relative;
-  height: 50px;
-  width: auto;
-  background-color: aqua;
+#map {
+  height: 700px;
+  width: 90%;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
 }
 
 footer {
   background: url(/imagenes/bg.jpg);
   text-align: center;
   padding: 40px;
-
-}
-
-.copyright {
-  color: #FFFFFF;
-  font-size: 13px;
-  margin: auto;
 }
 
 .logoB {
@@ -46,10 +40,8 @@ footer {
   padding: 15px 0;
 }
 
-#map {
-  height: 700px;
-  width: 90%;
-  margin: 20px auto;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: auto;
 }

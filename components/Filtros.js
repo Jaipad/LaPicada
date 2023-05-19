@@ -82,7 +82,7 @@ const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
         </AccordionItem>
       </Accordion>
 
-      <div style={{ display: "flex", gap: "10px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
         <label>Horario:</label>
         <Input type="time" />
       </div>
