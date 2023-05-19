@@ -1,9 +1,13 @@
 const Header = () => {
   return (
     <header>
-      <div class="caja">
+      <div className="caja">
         <h1>
-          <img class="logo"src="/imagenes/logoBlanco.png" alt="The Locales Squad" />
+          <img
+            className="logo"
+            src="/imagenes/logoBlanco.png"
+            alt="The Locales Squad"
+          />
         </h1>
       </div>
     </header>

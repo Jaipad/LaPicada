@@ -81,15 +81,7 @@ const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
         </AccordionItem>
       </Accordion>
 
-      <h2
-        style={{
-          position: "absolute",
-          left: "600px",
-          top: "50px",
-        }}
-      >
-        Horario:
-      </h2>
+      <h2>Horario:</h2>
     </div>
   );
 };

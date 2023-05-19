@@ -43,10 +43,6 @@ const Index = () => {
       </Head>
       <div className="container" id="principal">
         <Header />
-<<<<<<< HEAD
-        <Filtros />
-        <Mapa/>
-=======
         <Filtros
           comidas={comidas}
           setComidas={setComidas}
@@ -54,7 +50,6 @@ const Index = () => {
           setPagos={setPagos}
         />
         <Mapa />
->>>>>>> 23827a153c1032166d9b177adac42cbf706398bc
         <Footer />
       </div>
     </>
