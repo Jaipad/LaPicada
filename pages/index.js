@@ -8,6 +8,8 @@ import Header from "../components/Header.js";
 import Filtros from "../components/Filtros.js";
 import Mapa from "../components/Mapa.js";
 import Footer from "../components/Footer.js";
+import DrawerComp from "../components/DrawerComp.js";
+import Map from "../components/Mapa/index.js";
 
 const Index = () => {
   const [comidas, setComidas] = useState([
@@ -49,7 +51,8 @@ const Index = () => {
           pagos={pagos}
           setPagos={setPagos}
         />
-        <Mapa />
+        <Map />
+        <DrawerComp />
         <Footer />
       </div>
     </>

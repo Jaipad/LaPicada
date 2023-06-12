@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"..\\components\\Mapa\\index.js -> ./Map":{"id":"..\\components\\Mapa\\index.js -> ./Map","files":["static/chunks/components_Mapa_Map_js.js"]}}

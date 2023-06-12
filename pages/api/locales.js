@@ -1,11 +1,167 @@
 export const locales = [
   {
-    Id: 26,
-    Nombre: "La Calabaza",
-    Ubicación: { lat: 39.833345077603774, long: -73.23840340329585 },
-    Horario: { abierto: "12:00", Cerrado: "22:00" },
-    Tipo_Comida: ["Hamburguesas", "Completos"],
-    Tipo_de_pago: [
+    id: 1,
+    nombre: "La Calabaza",
+    ubicacion: { lat: -39.8331720628047, long: -73.23839267401046 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 2,
+    nombre: "Sobel",
+    ubicacion: { lat: -39.82590787810668, long: -73.22706410284593 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 3,
+    nombre: "Pizzaiolo",
+    ubicacion: { lat: -39.81266300647194, long: -73.24022746051706 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 4,
+    nombre: "Sushimix",
+    ubicacion: { lat: -39.83166524059258, long: -73.24167585881948 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 5,
+    nombre: "Eltata",
+    ubicacion: { lat: -39.83293151731654, long: -73.23865657401043 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 6,
+    nombre: "Otakusushi",
+    ubicacion: { lat: -39.840072, long: -73.22931 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 7,
+    nombre: "Chilenito",
+    ubicacion: { lat: -39.838362735408126, long: -73.2165807528393 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 8,
+    nombre: "Eneene",
+    ubicacion: { lat: -39.81786913862792, long: -73.24467371834038 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 9,
+    nombre: "Zonazero",
+    ubicacion: { lat: -39.81880908521896, long: -73.2476395568231 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 10,
+    nombre: "McDonalds",
+    ubicacion: { lat: -39.812871223173566, long: -73.24616973168179 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 11,
+    nombre: "KlasserBurger",
+    ubicacion: { lat: -39.81957024762493, long: -73.24515907804391 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 12,
+    nombre: "Papajohn",
+    ubicacion: { lat: -39.81957024762493, long: -73.24515907804391 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
+      { nombre: "Efectivo", acepta: true },
+      { nombre: "Débito", acepta: true },
+      { nombre: "Crédito", acepta: false },
+      { nombre: "Sodexo", acpeta: true },
+    ],
+  },
+  {
+    id: 13,
+    nombre: "Wingit",
+    ubicacion: { lat: -39.81611332706928, long: -73.23714251048254 },
+    horario: { abierto: "12:00", Cerrado: "22:00" },
+    tipo_Comida: ["Hamburguesas", "Completos"],
+    tipo_de_pago: [
       { nombre: "Efectivo", acepta: true },
       { nombre: "Débito", acepta: true },
       { nombre: "Crédito", acepta: false },
@@ -14,6 +170,6 @@ export const locales = [
   },
 ];
 
-export default async (req, res) => {
+export default function handler(req, res) {
   res.status(200).json(locales);
-};
+}
