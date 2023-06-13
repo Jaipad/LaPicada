@@ -6,7 +6,6 @@ import { useState } from "react";
 // Components
 import Header from "../components/Header.js";
 import Filtros from "../components/Filtros.js";
-import Mapa from "../components/Mapa.js";
 import Footer from "../components/Footer.js";
 import DrawerComp from "../components/DrawerComp.js";
 import Map from "../components/Mapa/index.js";
@@ -52,7 +51,6 @@ const Index = () => {
           setPagos={setPagos}
         />
         <Map />
-        <DrawerComp />
         <Footer />
       </div>
     </>

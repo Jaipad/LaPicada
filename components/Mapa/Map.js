@@ -2,10 +2,10 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import * as L from "leaflet";
-import { Icon } from "leaflet";
 
 // React
 import { useState, useEffect } from "react";
+import DrawerComp from "../DrawerComp";
 
 // Iconos de marcadores personalizados
 const myIcon = L.icon({
@@ -48,7 +48,10 @@ export default function Map() {
             position={[local.ubicacion.lat, local.ubicacion.long]}
             icon={myIcon}
           >
-            <Popup>{local.nombre}</Popup>
+            <Popup>
+              <p>{local.nombre}</p>
+              <DrawerComp local={local} />
+            </Popup>
           </Marker>
         ))}
       </MapContainer>

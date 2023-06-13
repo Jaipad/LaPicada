@@ -12,14 +12,14 @@ import {
 } from "@chakra-ui/react";
 import { useRef } from "react";
 
-const DrawerComp = () => {
+const DrawerComp = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { btnOpen } = useRef();
 
   return (
     <>
       <Button ref={btnOpen} colorScheme="teal" onClick={onOpen}>
-        Open
+        Ver Más
       </Button>
       <Drawer
         finalFocusRef={btnOpen}
@@ -30,7 +30,7 @@ const DrawerComp = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader>{props.local.nombre}</DrawerHeader>
 
           <DrawerBody>
             <Input placeholder="Type here..." />
