@@ -7,23 +7,24 @@ import { useState } from "react";
 import Header from "../components/Header.js";
 import Filtros from "../components/Filtros.js";
 import Footer from "../components/Footer.js";
-import DrawerComp from "../components/DrawerComp.js";
 import Map from "../components/Mapa/index.js";
 
 const Index = () => {
   const [comidas, setComidas] = useState([
-    { id: 1, nombre: "Hamburguesa", checked: false },
+    { id: 1, nombre: "Hamburguesas", checked: false },
     { id: 2, nombre: "Completos", checked: false },
     { id: 3, nombre: "Sushi", checked: false },
     { id: 4, nombre: "Italian Food", checked: false },
   ]);
 
   const [pagos, setPagos] = useState([
-    { id: 5, nombre: "Efectivo", checked: false },
-    { id: 6, nombre: "Débito", checked: false },
-    { id: 7, nombre: "Crédito", checked: false },
-    { id: 8, nombre: "Sodexo", checked: false },
+    { id: 1, nombre: "Efectivo", checked: false },
+    { id: 2, nombre: "Débito", checked: false },
+    { id: 3, nombre: "Crédito", checked: false },
+    { id: 4, nombre: "Sodexo", checked: false },
   ]);
+
+  const [horario, setHorario] = useState();
 
   return (
     <>
@@ -49,8 +50,9 @@ const Index = () => {
           setComidas={setComidas}
           pagos={pagos}
           setPagos={setPagos}
+          setHorario={setHorario}
         />
-        <Map />
+        <Map comidas={comidas} pagos={pagos} horario={horario} />
         <Footer />
       </div>
     </>

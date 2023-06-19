@@ -9,7 +9,7 @@ import {
   Input,
 } from "@chakra-ui/react";
 
-const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
+const Filtros = ({ comidas, setComidas, pagos, setPagos, setHorario }) => {
   const seleccionDeComidas = (event, item) => {
     const { checked } = event.target;
     setComidas((prevItems) =>
@@ -26,6 +26,10 @@ const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
         prevItem.id === item.id ? { ...prevItem, checked } : prevItem
       )
     );
+  };
+
+  const seleccionDeHorario = (event) => {
+    setHorario(event.target.value);
   };
 
   return (
@@ -84,7 +88,7 @@ const Filtros = ({ comidas, setComidas, pagos, setPagos }) => {
 
       <div className="filtroHorario">
         <label>Horario:</label>
-        <Input type="time" />
+        <Input type="time" onChange={(event) => seleccionDeHorario(event)} />
       </div>
     </div>
   );

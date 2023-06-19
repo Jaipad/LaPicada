@@ -1,4 +1,4 @@
-header {
+.head {
   background-color: #575757;
   padding: 40px 0;
 }
@@ -26,8 +26,8 @@ body {
 
 .filtroHorario {
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: baseline;
 }
 
 #map {
@@ -38,7 +38,7 @@ body {
   border-radius: 10px;
 }
 
-footer {
+.foot {
   background: url(/imagenes/bg.jpg);
   text-align: center;
   padding: 40px;

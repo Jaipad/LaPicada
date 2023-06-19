@@ -15,10 +15,11 @@ const myIcon = L.icon({
   popupAnchor: [0, -36],
 });
 
-export default function Map() {
+const Map = ({ comidas, pagos, horario }) => {
   const [locales, setLocales] = useState([]);
+  const [localesFiltrados, setLocalesFiltrados] = useState([]);
+
   useEffect(() => {
-    // La primera vez que carga el componente, pide los datos a "/api/locales"
     fetch("/api/locales")
       .then((res) => res.json())
       .then((data) => {
@@ -26,11 +27,41 @@ export default function Map() {
       });
   }, []);
 
+  useEffect(() => {
+    setLocalesFiltrados(locales);
+  }, [locales]);
+
+  useEffect(() => {
+    const localFiltrado = locales.filter((local) => {
+      return local.tipoComida.some((item) => {
+        return comidas.some((comida) => {
+          return comida.checked && comida.nombre === item;
+        });
+      });
+    });
+    setLocalesFiltrados(localFiltrado);
+  }, [comidas]);
+
+  useEffect(() => {
+    console.log("localFiltrado");
+    const localFiltrado = locales.filter((local) => {
+      return local.tipoDePago.some((item) => {
+        return pagos.some((pago) => {
+          return pago.checked && pago.nombre === item;
+        });
+      });
+    });
+    setLocalesFiltrados(localFiltrado);
+  }, [pagos]);
+
+  console.log(comidas);
+  console.log(pagos);
+  /*   console.log(localesFiltrados); */
+
   const position_valdivia = [-39.823651901716296, -73.23533346913247];
-  console.log(locales);
+
   return (
     <div className="map__box">
-      {/* Configuraciones generales del Mapa, zoom, scroll, etc */}
       <MapContainer
         id="map"
         center={position_valdivia}
@@ -41,8 +72,8 @@ export default function Map() {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {/* Recorrer sus locales */}
-        {locales.map((local) => (
+
+        {localesFiltrados.map((local) => (
           <Marker
             key={local.id}
             position={[local.ubicacion.lat, local.ubicacion.long]}
@@ -57,4 +88,6 @@ export default function Map() {
       </MapContainer>
     </div>
   );
-}
+};
+
+export default Map;

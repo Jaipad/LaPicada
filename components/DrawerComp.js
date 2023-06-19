@@ -32,9 +32,7 @@ const DrawerComp = (props) => {
           <DrawerCloseButton />
           <DrawerHeader>{props.local.nombre}</DrawerHeader>
 
-          <DrawerBody>
-            <Input placeholder="Type here..." />
-          </DrawerBody>
+          <DrawerBody></DrawerBody>
 
           <DrawerFooter>
             <Button variant="outline" mr={3} onClick={onClose}>

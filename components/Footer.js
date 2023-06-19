@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className="foot">
       <img className="logoB" src="/imagenes/logoBlanco.png" />
       <p className="copyright">&copy Copyright The Locales Squad - 2023</p>
     </footer>
