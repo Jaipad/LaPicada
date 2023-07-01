@@ -24,7 +24,7 @@ const Index = () => {
     { id: 4, nombre: "Sodexo", checked: false },
   ]);
 
-  const [horario, setHorario] = useState();
+  const [horario, setHorario] = useState("");
 
   return (
     <>

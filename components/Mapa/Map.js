@@ -43,7 +43,6 @@ const Map = ({ comidas, pagos, horario }) => {
   }, [comidas]);
 
   useEffect(() => {
-    console.log("localFiltrado");
     const localFiltrado = locales.filter((local) => {
       return local.tipoDePago.some((item) => {
         return pagos.some((pago) => {
@@ -54,9 +53,31 @@ const Map = ({ comidas, pagos, horario }) => {
     setLocalesFiltrados(localFiltrado);
   }, [pagos]);
 
-  console.log(comidas);
-  console.log(pagos);
-  /*   console.log(localesFiltrados); */
+  useEffect(() => {
+    const horarioFiltrar = new Date();
+    const [hora, minuto] = horario.split(":");
+
+    horarioFiltrar.setHours(hora);
+    horarioFiltrar.setMinutes(minuto);
+
+    const localFiltrado = locales.filter((local) => {
+      const abierto = new Date();
+      const cerrado = new Date();
+
+      const [horasA, minutosA] = local.horario.abierto.split(":");
+      const [horasC, minutosC] = local.horario.Cerrado.split(":");
+
+      abierto.setHours(horasA);
+      abierto.setMinutes(minutosA);
+      cerrado.setHours(horasC);
+      cerrado.setMinutes(minutosC);
+
+      if (horarioFiltrar >= abierto && horarioFiltrar <= cerrado) {
+        return local;
+      }
+    });
+    setLocalesFiltrados(localFiltrado);
+  }, [horario]);
 
   const position_valdivia = [-39.823651901716296, -73.23533346913247];
 

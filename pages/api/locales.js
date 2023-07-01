@@ -6,6 +6,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ export const locales = [
     horario: { abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Hamburguesas", "Completos"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Aqui va la descripcion de cada local",
   },
 ];
 

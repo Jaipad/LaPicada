@@ -7,6 +7,6 @@ import dynamic from "next/dynamic";
 const Map = dynamic(() => import("./Map"), { ssr: false });
 
 // Cargando el mapa y pasándole props: comidas
-export default function MapComponent({ comidas }) {
-  return <Map comidas={comidas} />;
+export default function MapComponent({ comidas, pagos, horario }) {
+  return <Map comidas={comidas} pagos={pagos} horario={horario} />;
 }
