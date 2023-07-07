@@ -125,6 +125,24 @@ export const locales = [
     tipoDePago: ["Efectivo", "Débito", "Crédito"],
     descripcion: "Mejor cerveceria del mundo, reconocida a nivel mundial, con medallas de todo tipo.",
   },
+  {
+    id: 15,
+    nombre: "Carrito Las Delicias",
+    ubicacion: { lat: -39.82761723910627, long:  -73.25033684688738 },
+    horario: { abierto: "00:00", Cerrado: "23:59" },
+    tipoComida: ["Hamburguesas", "Completos", "Italian Food"],
+    tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
+    descripcion: "Famoso Carrito de comida rapida",
+  },
+  {
+    id: 16,
+    nombre: "Tribal food truck",
+    ubicacion: { lat: -39.808912199050326, long: -73.25789950031437 },
+    horario: { abierto: "13:00", Cerrado: "22:30" },
+    tipoComida: ["Hamburguesas", "Italian Food", "Completos"],
+    tipoDePago: ["Efectivo", "Débito", "Crédito"],
+    descripcion: "Carrito en Teja",
+  },
 ];
 
 export default function handler(req, res) {
