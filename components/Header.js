@@ -5,7 +5,7 @@ const Header = () => {
         <h1>
           <img
             className="logo"
-            src="/imagenes/logoBlanco.png"
+            src="/imagenes/LogoBlanco.png"
             alt="The Locales Squad"
           />
         </h1>
