@@ -101,7 +101,7 @@ export const locales = [
   {
     id: 12,
     nombre: "Papajohn",
-    ubicacion: { lat: -39.81957024762493, long: -73.24515907804391 },
+    ubicacion: { lat: -39.81620919541818, long:  -73.23663420470248 },
     horario: { Abierto: "12:00", Cerrado: "22:00" },
     tipoComida: ["Italian Food"],
     tipoDePago: ["Efectivo", "Débito", "Crédito", "Sodexo"],
